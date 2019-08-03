@@ -20,7 +20,11 @@ function clickbtn() {
   if (myRandomNumber === numberValue) {
     text.innerHTML = '¡HAS GANADO, CAMPEONA!';
     console.log(cont);
-  } else if (myRandomNumber > numberValue) {
+    cont = cont + 1;
+  } else if (numberValue>100 | numberValue< 0){
+    text.innerHTML = 'El numero tiene que estar entre 0 y 100,Te has salido del rango';
+    cont = cont + 1;
+  }else if (myRandomNumber > numberValue) {
     text.innerHTML = 'Demasiado bajo';
     cont = cont + 1;
     lost.innerHTML = cont;
