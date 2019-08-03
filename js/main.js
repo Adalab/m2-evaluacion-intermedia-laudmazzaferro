@@ -25,7 +25,7 @@ function clickbtn() {
     cont = cont + 1;
     lost.innerHTML = cont;
     console.log(cont);
-  } else if (myRandomNumber < numberValue) {
+  } else {
     text.innerHTML = 'Demasiado alto';
     cont = cont + 1;
     lost.innerHTML = cont;
