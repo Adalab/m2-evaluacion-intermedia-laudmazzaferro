@@ -21,7 +21,10 @@ function clickbtn() {
     text.innerHTML = '¡HAS GANADO, CAMPEONA!';
     console.log(cont);
     cont = cont + 1;
-  } else if (numberValue>100 | numberValue< 0){
+  } else if (numberValue.value === NaN){
+    console.log('holaaa');
+    text.innerHTML = 'Campo vacio, escribir un numero';
+  }else if (numberValue>100 | numberValue< 0){
     text.innerHTML = 'El numero tiene que estar entre 0 y 100,Te has salido del rango';
     cont = cont + 1;
   }else if (myRandomNumber > numberValue) {
