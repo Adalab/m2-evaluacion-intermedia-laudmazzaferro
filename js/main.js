@@ -10,19 +10,18 @@ function getRandomNumber(max) {
 }
 
 const myRandomNumber = getRandomNumber(100);
-console.log(`Mi número aleatorio es ${myRandomNumber}`);
+//console.log(`Mi número aleatorio es ${myRandomNumber}`);
 
 function clickbtn() {
-  
   const numberValue = parseInt(number.value);
-  console.log(numberValue);
+  //console.log(number.value);
 
   if (myRandomNumber === numberValue) {
     text.innerHTML = '¡HAS GANADO, CAMPEONA!';
-    console.log(cont);
+    //console.log(cont);
     cont = cont + 1;
-  } else if (numberValue.value === NaN){
-    console.log('holaaa');
+  } else if (number.value === ''){
+    //console.log('holaaa');
     text.innerHTML = 'Campo vacio, escribir un numero';
   }else if (numberValue>100 | numberValue< 0){
     text.innerHTML = 'El numero tiene que estar entre 0 y 100,Te has salido del rango';
@@ -31,12 +30,12 @@ function clickbtn() {
     text.innerHTML = 'Demasiado bajo';
     cont = cont + 1;
     lost.innerHTML = cont;
-    console.log(cont);
+    //console.log(cont);
   } else {
     text.innerHTML = 'Demasiado alto';
     cont = cont + 1;
     lost.innerHTML = cont;
-    console.log(cont);
+    //console.log(cont);
   }
 }
 
