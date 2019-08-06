@@ -38,6 +38,12 @@ function clickbtn() {
 
 }
 
+function enter(event){
+  if (event.keyCode === 13){
+    clickbtn();
+  }
+}
+
 function reset(){
   cont=0;
   number.value='';
@@ -50,5 +56,5 @@ function reset(){
 console.log(myRandomNumber );
 
 btn.addEventListener('click', clickbtn);
-number.addEventListener('change',clickbtn);
+number.addEventListener('keyup',enter);
 resetBtn.addEventListener('click',reset);
