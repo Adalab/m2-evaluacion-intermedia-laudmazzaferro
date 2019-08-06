@@ -4,12 +4,23 @@
     font-family: 'open sans', sans-serif;;
     
 }
-.body{
+.game-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #bfcdd0;
     position: relative;
+    width: 300px;
+    border:solid black 1px;
+    margin:auto;
+    padding: 30px;
+}
+.body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #bfcdd0;
     margin-top: 20px;
 }
 .tittle{
@@ -32,7 +43,10 @@
     font-size: 100px;
     line-height: 100%;
 }
+.reset-button{
+    margin-top: 20px;
+}
 .text{
-    border: solid blue 1px;
+    
     text-align: center;
 }
