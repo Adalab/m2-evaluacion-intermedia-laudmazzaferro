@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'open sans', sans-serif;;
+    font-family: 'Lobster Two', cursive;
     
 }
 .game-container{
@@ -9,10 +9,13 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    width: 300px;
+    width: 350px;
     border:solid black 1px;
+    border-radius: 20px;
     margin:auto;
     padding: 30px;
+    background: white;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.35);
 }
 .body{
     height: 100vh;
@@ -22,30 +25,48 @@
     justify-content: center;
     background: #bfcdd0;
     margin-top: 20px;
+    background: linear-gradient(to bottom, purple, lightpink);
 }
 .tittle{
     margin-bottom: 70px;
+    font-size: 35px;
+    font-family: 'Alfa Slab One', cursive;
 }
 .fill_number{
     margin-bottom: 20px;
+    font-size: 30px;
 }
 .field__fill-number{
     margin-bottom: 20px; 
 }
 .btn{
-    margin-bottom: 70px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    border-radius:22.5px;
+    font-size: 20px;
 }
+.btn:hover {
+    background-color: lightpink;
+  }
+
 .lost{
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    color: red;
-    font-size: 100px;
-    line-height: 100%;
+    color:purple;
+    font-size: 50px;
 }
 .reset-button{
     margin-top: 20px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    border-radius:22.5px;
+    font-size: 20px;
 }
+.reset-button:hover {
+    background-color:lightpink;
+  }
 .text{
     
     text-align: center;

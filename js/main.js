@@ -17,16 +17,17 @@ function clickbtn() {
   const numberValue = parseInt(number.value);
   //console.log(number.value);
   cont = cont + 1;
-  lost.innerHTML = cont;
+  lost.innerHTML = cont +' Intentos';
+  console.log(numberValue + 'ganador');
 
   if (myRandomNumber === numberValue) {
-    text.innerHTML = '¡HAS GANADO, CAMPEONA!';
+    text.innerHTML = 'HAS GANADO, CON TAN SOLO';
     console.log('ganador');
   } else if (number.value === ''){
     console.log('vacio');
-    text.innerHTML = 'Campo vacio, escribir un numero';
+    text.innerHTML = 'Campo vacío, escribir un número';
   }else if (numberValue>100 | numberValue< 0){
-    text.innerHTML = 'El numero tiene que estar entre 0 y 100,Te has salido del rango';
+    text.innerHTML = 'El número tiene que estar entre 0 y 100,Te has salido del rango';
     console.log('raango');
   }else if (myRandomNumber > numberValue) {
     text.innerHTML = 'Demasiado bajo';
